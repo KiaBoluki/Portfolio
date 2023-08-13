@@ -2,6 +2,7 @@
     --primary: #b31123;
     --secondary: #e2fa07;
     --text: #fff2f4;
+    --highlight: #e2fa07;
 }
 
 *{
@@ -11,7 +12,7 @@
     outline: none;
     background: none;
     text-decoration: none;
-    font-family: Oswald;
+    font-family: Roboto;
     color: var(--text);
     line-height: 1.6;
     font-size: 1rem;
@@ -19,17 +20,20 @@
     list-style-type: none;
 }
 
-
+body{
+    background-color: #030303;
+}
 
 section{
     min-height: 100vh;
 }
 
 #hero{
-    background-image: url('images/bg.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 
 header{
@@ -63,16 +67,18 @@ nav ul{
 }
 
 #contact{
-    font-family: Roboto;
-    font-weight: 100;
-    letter-spacing: .7mm;
+    
     margin-inline: auto;
+    
 
 }
 
 #contact div a span {
     font-size: smaller;
     text-transform: uppercase;
+    font-family: Oswald;
+    font-weight: 100;
+    letter-spacing: .7mm;
 }
 
 #contact * img {
@@ -92,6 +98,29 @@ nav ul{
 
 main {
     background-color: #030303;
+    width: 50%;
+    margin-inline: auto;
+    padding-block: 2rem;
 }
 
+p {
+    text-align: justify;
+    padding-block: 1rem;
+    font-weight: 100;
+    font-family: Roboto;
+}
+
+p::first-letter{
+    color: var(--highlight);
+    font-size: 1.5rem;
+}
+
+.highlight{
+    color: var(--highlight)
+}
+
+.title {
+    font-size: 2rem;
+    letter-spacing: 2mm;
+}
 
