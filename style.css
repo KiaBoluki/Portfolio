@@ -1,0 +1,97 @@
+:root {
+    --primary: #b31123;
+    --secondary: #e2fa07;
+    --text: #fff2f4;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    background: none;
+    text-decoration: none;
+    font-family: Oswald;
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 1rem;
+    /* outline: 1px solid red; */
+    list-style-type: none;
+}
+
+
+
+section{
+    min-height: 100vh;
+}
+
+#hero{
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+#brand{
+    font-size: 1.5rem;
+    color: var(--secondary);
+    font-family: Roboto;
+    font-weight: bold;
+    flex: 1;
+}
+
+nav{
+    flex:3;
+}
+
+nav ul{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    
+}
+
+#contact{
+    font-family: Roboto;
+    font-weight: 100;
+    letter-spacing: .7mm;
+    margin-inline: auto;
+
+}
+
+#contact div a span {
+    font-size: smaller;
+    text-transform: uppercase;
+}
+
+#contact * img {
+    width: 12px;
+}
+
+#title{
+    width: 80%;
+    margin-inline: auto;
+    font-size: 10rem;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff2f4;
+    opacity: .25;
+    padding-block: 5rem;
+}
+
+main {
+    background-color: #030303;
+}
+
+
