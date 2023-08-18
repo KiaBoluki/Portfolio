@@ -17,7 +17,7 @@
     line-height: 1.6;
     font-size: 1rem;
     /* outline: 1px solid red; */
-    list-style-type: none;
+    /* list-style-type: none; */
 }
 
 body{
@@ -26,6 +26,14 @@ body{
 
 section{
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section:not(:nth-child(1)){
+    border-top: 1px solid ; 
 }
 
 #hero{
@@ -122,5 +130,60 @@ p::first-letter{
 .title {
     font-size: 2rem;
     letter-spacing: 2mm;
+    margin: 1rem 0;
+}
+
+#skills>ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#skills .highlight {
+    padding-top: 1rem;
+}
+
+
+#soft-skills ol li {
+    margin-bottom: 1rem;
+}
+
+small {
+    
+    font-weight: 300;
+    font-size: small;
+}
+
+#education {
+    display: flex !important;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: start;
+}
+
+
+#education ul li {
+    margin-bottom: 1rem;
+}
+
+#bottom-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+#bottom-contact>div>a{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#bottom-contact>div img{
+    display: inline-block;
+    height: 100%;
+    margin-right: .25rem;
 }
 
