@@ -71,7 +71,7 @@ nav ul{
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    
+    list-style-type: none;
 }
 
 #contact{
